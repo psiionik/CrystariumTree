@@ -1,0 +1,27 @@
+version: '3'
+
+services:
+  webfrontend:
+    container_name: webfrontend
+    build:
+      context: ./webfrontend
+      dockerfile: Dockerfile
+    # command: yarn start
+    volumes:
+      - './webfrontend:/app'
+      - '/app/node_modules'
+    ports:
+      - 3000:3000
+    environment:
+      - NODE_ENV=development
+    links:
+      - apigateway
+    tty: true
+  apigateway:
+    container_name: apigateway
+    build: ./apigateway
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ./apigateway:/app
+    ports:
+      - '8000:8000'
