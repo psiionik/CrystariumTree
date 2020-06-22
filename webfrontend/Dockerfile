@@ -31,4 +31,4 @@ RUN yarn global add react-scripts
 COPY . ./
 
 # start app
-CMD ["yarn", "start"]
+CMD ["yarn", "run", "start"]

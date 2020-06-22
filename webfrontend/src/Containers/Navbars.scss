@@ -1,0 +1,26 @@
+@import "../config-styles";
+
+.background {
+    height: 10%;
+    width: 100%;
+    background-color: $basic-background-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text {
+    font-family: $desired-font;
+    color: white;
+}
+
+.nav-box-1 {
+    flex-grow: 2;
+}
+
+.nav-box-2 {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

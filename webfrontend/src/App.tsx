@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import SkillTree from './Containers/SkillTree'
+import Navbar from './Containers/Navbars'
 
 function App() {
   return (
     <div className="App">
-        <SkillTree />
+        <Navbar />
     </div>
   );
 }
