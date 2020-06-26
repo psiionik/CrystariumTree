@@ -1,0 +1,48 @@
+@import "../../config-styles";
+
+.player-text {
+    text-align: center;
+    font-family: $desired-font;
+    font-size: $header-font-size;
+    margin-bottom: 10px;
+}
+
+.buttonResetContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonReset {
+    margin-top: 20px;
+    padding: 20px 80px;
+    background-color: $basic-background-color;
+    color: white;
+    border: none;
+    font-family: $desired-font;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.stateContainer {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 500px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.stateBox {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: $basic-background-color;
+    color: white;
+    font-family: $desired-font;
+    cursor: pointer;
+    border-radius: 4px;
+}

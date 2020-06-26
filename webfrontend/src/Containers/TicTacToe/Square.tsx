@@ -10,6 +10,7 @@ interface SquareProps {
     clickFunction: (e: React.MouseEvent<HTMLDivElement, MouseEvent>, row_index: number, col_index: number) => void;
     col_index: number;
     row_index: number;
+    playing: boolean;
 }
 
 export default class Square extends React.Component<SquareProps, {}> {
@@ -22,8 +23,8 @@ export default class Square extends React.Component<SquareProps, {}> {
             <div className={styles.square}>
                 {this.props.item === "X" ? <FiX color="red" size="5em"/> :
                  this.props.item ==="O" ? <FiCircle color="green" size="5em"/> :
-                <div className={styles.clickable} onClick={(e) => this.props.clickFunction(e, this.props.row_index, this.props.col_index)}>
-                </div>}
+                 this.props.playing ? <div className={styles.clickable} onClick={(e) => this.props.clickFunction(e, this.props.row_index, this.props.col_index)}></div> 
+                 : <div></div>}
             </div>
         )
     }
