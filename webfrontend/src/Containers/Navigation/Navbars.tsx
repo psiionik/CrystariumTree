@@ -8,7 +8,7 @@ export default class Navbar extends React.Component {
         return (
             <div className={styles.background}>
                 <div className={styles["nav-box-1"]}>
-                    <p className={styles.text} style={{fontSize: "30px"}}>Branden Kim</p>
+                    <p className={styles.text} style={{marginLeft: "2%", fontSize: "30px"}}>Branden Kim</p>
                 </div>
                 <div className={styles["nav-box-2"]}>
                     <p className={styles.text}>Crystarium Tree</p>
