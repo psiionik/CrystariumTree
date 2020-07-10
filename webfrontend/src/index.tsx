@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import WebFont from 'webfontloader';
 
+import { Provider } from 'react-redux'
 import { BrowserRouter } from "react-router-dom"
 
 WebFont.load({

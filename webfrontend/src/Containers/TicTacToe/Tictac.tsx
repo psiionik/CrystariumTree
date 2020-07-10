@@ -3,8 +3,6 @@ import React from 'react';
 import styles from './Tictac.module.scss'
 
 import Board from './Board'
-import { networkInterfaces } from 'os';
-import { relative } from 'path';
 
 interface TictacState {
     board: string[][];
