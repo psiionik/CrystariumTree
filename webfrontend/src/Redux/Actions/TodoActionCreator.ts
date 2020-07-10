@@ -1,3 +1,9 @@
+/*
+===================================================================
+TODOLIST ACTION CREATORS
+===================================================================
+*/
+
 import { TodoActionTypes, ADD_TODO, DELETE_TODO, TOGGLE_TODO } from "./ActionTypes"
 
 export function addTodoActionCreator(text: string): TodoActionTypes {
