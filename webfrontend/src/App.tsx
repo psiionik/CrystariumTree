@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './App.module.scss';
 import Navbar from './Containers/Navigation/Navbars'
-import Tictac from './Containers/TicTacToe/Tictac'
+import Router from './Containers/Navigation/Router';
 
 function App() {
   return (
     <div className={styles.App}>
         <Navbar />
         <div className={styles.centered}>
-          <Tictac />
+          <Router />
         </div>
     </div>
   );
